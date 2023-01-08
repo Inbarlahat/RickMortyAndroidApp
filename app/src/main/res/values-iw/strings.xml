@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Morty And Morty</string>
+    <string name="back_button">חזור</string>
+    <string name="error">שגיאה</string>
+    <string name="continue_button">המשך</string>
+    <string name="unknown">לא ידוע</string>
+    <string name="home_tab">ראשי</string>
+    <string name="welcome">ברוכים הבאים!</string>
+    <string name="home_intro">כאן יש לכם כל מה שאתם צריכים לדעת על ריק ומורטי</string>
+    <string name="create_button">צרו דמות</string>
+    <string name="all_characters_button">כל הדמויות</string>
+    <string name="all_characters_tab">דמויות</string>
+    <string name="characters_title">דמויות</string>
+    <string name="reset_button">בטל</string>
+    <string name="search_text">חפש דמות</string>
+    <string name="name_character">---</string>
+    <string name="status_title">סטטוס</string>
+    <string name="status_character">---</string>
+    <string name="species_title">גזע</string>
+    <string name="species_character">---</string>
+    <string name="type_title">סוג</string>
+    <string name="type_character">---</string>
+    <string name="gender_title">מין</string>
+    <string name="gender_character">---</string>
+    <string name="create_tab">צור</string>
+    <string name="error_empty_fields_msg">חייב למלא את כל השדות</string>
+    <string name="enter_name">הכנס שם</string>
+    <string name="enter_status">הכנס סטטוס</string>
+    <string name="enter_species">הכנס גזע</string>
+    <string name="enter_type">הכנס סוג</string>
+    <string name="enter_gender">הכנס מין</string>
+    <string name="add_character_img">הוספת תמונה</string>
+    <string name="generate_character">צור את הדמות!</string>
+    <string name="see_created_tab">דמויות שיצרתי</string>
+    <string name="status_title_created">סטטוס</string>
+    <string name="species_title_created">גזע</string>
+    <string name="type_title_created">סוג</string>
+    <string name="gender_title_created">מין</string>
+    <string name="filter_characters">מיין דמויות</string>
+</resources>

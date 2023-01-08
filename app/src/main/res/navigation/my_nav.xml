@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav.xml"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/allCharactersFragment"
+        android:name="com.example.rickmortyv3.ui.all_characters.AllCharactersFragment"
+        android:label="characters_fragment"
+        tools:layout="@layout/characters_fragment" >
+        <action
+            android:id="@+id/action_allCharactersFragment_to_singleCharacterFragment"
+            app:destination="@id/singleCharacterFragment" />
+        <action
+            android:id="@+id/action_allCharactersFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <!--        <action-->
+<!--            android:id="@+id/action_allCharactersFragment_to_favoriteCharactersFragment"-->
+<!--            app:destination="@id/favoriteCharactersFragment" />-->
+    </fragment>
+    <fragment
+        android:id="@+id/singleCharacterFragment"
+        android:name="com.example.rickmortyv3.ui.single_character.SingleCharacterFragment"
+        android:label="character_detail_fragment"
+        tools:layout="@layout/character_detail_fragment" >
+        <action
+            android:id="@+id/action_singleCharacterFragment_to_allCharactersFragment"
+            app:destination="@id/allCharactersFragment" />
+    </fragment>
+<!--    <fragment-->
+<!--        android:id="@+id/favoriteCharactersFragment"-->
+<!--android:name=""        android:label="FavoriteCharactersFragment" >-->
+<!--        <action-->
+<!--            android:id="@+id/action_favoriteCharactersFragment_to_singleCharacterFragment"-->
+<!--            app:destination="@id/singleCharacterFragment" />-->
+<!--    </fragment>-->
+    <fragment
+        android:id="@+id/createdCharactersFragment"
+        android:name="com.example.rickmortyv3.ui.create_character.CreatedCharactersFragment"
+        android:label="CreatedCharactersFragment"
+        tools:layout="@layout/created_characters_fragment" >
+        <action
+            android:id="@+id/action_createdCharactersFragment_to_createNewCharacterFragment"
+            app:destination="@id/createNewCharacterFragment" />
+        <action
+            android:id="@+id/action_createdCharactersFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/createNewCharacterFragment"
+        android:name="com.example.rickmortyv3.ui.create_character.CreateNewCharacterFragment"
+        android:label="fragment_create_new_character"
+        tools:layout="@layout/fragment_create_new_character" >
+        <action
+            android:id="@+id/action_createNewCharacterFragment_to_createdCharactersFragment"
+            app:destination="@id/createdCharactersFragment" />
+        <action
+            android:id="@+id/action_createNewCharacterFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.rickmortyv3.ui.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_allCharactersFragment"
+            app:destination="@id/allCharactersFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_createNewCharacterFragment"
+            app:destination="@id/createNewCharacterFragment" />
+    </fragment>
+</navigation>

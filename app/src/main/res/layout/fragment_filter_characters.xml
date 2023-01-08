@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    tools:context=".ui.filter_characters.FilterCharactersFragment">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        tools:textColor="@color/white"
+        android:fontFamily="sans-serif-condensed"
+        android:textStyle="bold|italic"
+        android:text="@string/filter_characters"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/txt_title_episodes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/status_title"
+            android:fontFamily="sans-serif-condensed"
+            tools:textColor="@color/white"
+            android:layout_gravity="center"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chipgroup_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            app:singleSelection="true">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_alive"
+                style="@style/CostumChip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alive"
+                android:textSize="14sp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_dead"
+                style="@style/CostumChip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dead"
+                android:textSize="14sp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_unknown"
+                style="@style/CostumChip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Unknown"
+                android:textSize="14sp" />
+
+        </com.google.android.material.chip.ChipGroup>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="@string/gender_title"
+            android:textSize="18sp"
+            tools:textColor="@color/white"
+            android:layout_gravity="center"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:layout_gravity="center"
+            android:id="@+id/radiogroup_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/checkbox_female"
+                style="@style/CostumRadioButton"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/checkbox_female_selector"
+                android:text="txt_checkbox_female" />
+
+            <RadioButton
+                android:id="@+id/checkbox_male"
+                style="@style/CostumRadioButton"
+                android:background="@drawable/checkbox_male_selector"
+                android:text="txt_checkbox_male"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"/>
+
+            <RadioButton
+                android:id="@+id/checkbox_genderless"
+                style="@style/CostumRadioButton"
+                android:background="@drawable/checkbox_genderless_selector"
+                android:text="txt_checkbox_male"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"/>
+
+            <RadioButton
+                android:id="@+id/checkbox_unknown"
+                style="@style/CostumRadioButton"
+                android:background="@drawable/checkbox_unknown_selector"
+                android:text="txt_checkbox_male"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"/>
+
+        </RadioGroup>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_make_filter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="24dp"
+        android:text="apply filter"
+        app:cornerRadius="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayoutGender"
+        android:backgroundTint="#03FFFFFF"
+        android:textColor="@color/teal_200"
+        app:strokeColor="@color/teal_200"
+        app:strokeWidth="2dp" />
+
+</LinearLayout>

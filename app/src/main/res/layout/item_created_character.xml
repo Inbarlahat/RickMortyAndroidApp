@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="55dp"
+    android:layout_marginStart="18dp"
+    android:layout_marginEnd="18dp"
+    android:layout_marginTop="16dp"
+    app:strokeColor="@color/mtrl_textinput_default_box_stroke_color"
+    android:backgroundTint="@color/black"
+    app:strokeWidth="2dp"
+    android:id="@+id/name_card">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="15dp"
+        >
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginVertical="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:fontFamily="sans-serif-condensed"
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/teal_200"
+            android:textSize="18sp"
+            android:textStyle="bold|italic"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toStartOf="@+id/image"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="@string/name_character" />
+
+        <TextView
+            android:id="@+id/species_text"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="@color/teal_200"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/species_title_created"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/name" />
+
+
+        <TextView
+            android:id="@+id/species"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="40dp"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="@color/teal_200"
+            app:layout_constraintEnd_toStartOf="@+id/image"
+            app:layout_constraintTop_toBottomOf="@+id/name"
+            tools:text="@string/species_character" />
+
+        <TextView
+            android:id="@+id/type_text"
+            android:textColor="@color/teal_200"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="@string/type_title_created"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/species" />
+
+
+        <TextView
+            android:id="@+id/type"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="@color/teal_200"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="40dp"
+            tools:text="@string/type_character"
+            app:layout_constraintEnd_toStartOf="@+id/image"
+            app:layout_constraintTop_toBottomOf="@+id/species" />
+
+        <TextView
+            android:id="@+id/status_text"
+            android:textColor="@color/teal_200"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/status_title_created"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/type_text" />
+
+        <TextView
+            android:id="@+id/status"
+            android:textColor="@color/teal_200"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="40dp"
+            tools:text="@string/status_character"
+            app:layout_constraintEnd_toStartOf="@+id/image"
+            app:layout_constraintTop_toBottomOf="@+id/type" />
+
+        <TextView
+            android:id="@+id/gender_text"
+            android:textColor="@color/teal_200"
+            android:layout_width="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/gender_title_created"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/status_text" />
+
+        <TextView
+            android:id="@+id/gender"
+            android:textColor="@color/teal_200"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="40dp"
+            tools:text="@string/gender_character"
+            app:layout_constraintEnd_toStartOf="@+id/image"
+            app:layout_constraintTop_toBottomOf="@+id/status" />
+        <!--    <ImageView-->
+        <!--        android:id="@+id/image"-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:layout_height="match_parent"-->
+        <!--        android:scaleType="centerCrop"-->
+        <!--        app:layout_constraintHorizontal_bias="0.5"-->
+        <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--        app:layout_constraintEnd_toEndOf="parent"-->
+        <!--        app:layout_constraintStart_toStartOf="parent"-->
+        <!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+
+        <!--    <LinearLayout-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:layout_height="100dp"-->
+        <!--        android:background="#CD09CAB7"-->
+        <!--        android:orientation="vertical"-->
+        <!--        android:outlineSpotShadowColor="@color/white"-->
+        <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--        app:layout_constraintEnd_toEndOf="parent"-->
+        <!--        app:layout_constraintStart_toStartOf="parent">-->
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/name"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_gravity="center|top"-->
+        <!--            android:layout_marginTop="20dp"-->
+        <!--            android:maxLines="2"-->
+        <!--            android:textSize="16sp"-->
+        <!--            android:textStyle="bold"-->
+        <!--            tools:text="Unknown" />-->
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/species_and_status"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_gravity="center|top"-->
+        <!--            android:layout_marginTop="4dp"-->
+        <!--            android:layout_marginBottom="8dp"-->
+        <!--            android:textSize="12sp"-->
+        <!--            tools:text="Unknown" />-->
+
+
+
+        <!--    </LinearLayout>-->
+        <!--    -->
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+    <!--<androidx.cardview.widget.CardView-->
+    <!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--    xmlns:tools="http://schemas.android.com/tools"-->
+    <!--    android:layout_width="match_parent"-->
+    <!--    android:layout_height="wrap_content"-->
+    <!--    app:cardUseCompatPadding="true"-->
+    <!--    app:contentPadding="6dp"-->
+    <!--    app:cardCornerRadius="6dp"-->
+    <!--    android:padding="10dp">-->
+
+    <!--    <androidx.appcompat.widget.AppCompatImageView-->
+    <!--        android:id="@+id/image"-->
+    <!--        android:layout_width="60dp"-->
+    <!--        android:layout_height="60dp"-->
+    <!--        android:layout_marginStart="10dp"-->
+    <!--        android:layout_marginTop="10dp"-->
+    <!--        android:layout_marginBottom="10dp"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/name"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginStart="15dp"-->
+    <!--        android:layout_marginTop="10dp"-->
+    <!--        android:text="TextView"-->
+    <!--        android:textSize="18sp"-->
+    <!--        android:textStyle="bold"-->
+    <!--        android:layout_gravity="center|top" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/species_and_status"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginStart="15dp"-->
+    <!--        android:layout_marginTop="5dp"-->
+    <!--        android:text="TextView"-->
+    <!--        android:layout_gravity="center|bottom"-->
+    <!--        android:layout_marginBottom="16dp"-->
+    <!--        app:layout_constraintStart_toEndOf="@+id/image"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/name" />-->
+    <!--    -->
+    <!--    -->
+    <!--</androidx.cardview.widget.CardView>-->

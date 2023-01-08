@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">Rick And Morty</string>
+    <string name="back_button">Back</string>
+    <string name="error">Error</string>
+    <string name="continue_button">Continue</string>
+    <string name="unknown">Unknown</string>
+
+    <!-- Home Fragment-->
+    <string name="home_tab">Home</string>
+    <string name="welcome">Welcome!</string>
+    <string name="home_intro">Here you can check\nall things\nRick &amp; Morty!\nOr create a character\nof your OWN!</string>
+    <string name="create_button">Create your own</string>
+    <string name="all_characters_button">All Characters</string>
+
+<!-- All Characters Fragment  -->
+    <string name="all_characters_tab">All\nFigures</string>
+    <string name="characters_title">Characters</string>
+    <string name="reset_button">reset</string>
+    <string name="search_text">Search Character</string>
+
+<!-- Single Character Fragment-->
+    <string name="name_character">---</string>
+    <string name="status_title">Status</string>
+    <string name="status_character">---</string>
+    <string name="species_title">Species</string>
+    <string name="species_character">---</string>
+    <string name="type_title">Type</string>
+    <string name="type_character">---</string>
+    <string name="gender_title">Gender</string>
+    <string name="gender_character">---</string>
+
+<!-- Create Character Fragment-->
+    <string name="create_tab">Create</string>
+    <string name="error_empty_fields_msg">"You must fill all fields!"</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="enter_status">Enter Status</string>
+    <string name="enter_species">Enter Species</string>
+    <string name="enter_type">Enter Type</string>
+    <string name="enter_gender">Enter Gender</string>
+    <string name="add_character_img">Add Character Image</string>
+    <string name="generate_character">Generate New Character</string>
+
+<!-- See Created Characters Fragment-->
+    <string name="see_created_tab">Created\nFigures</string>
+    <string name="status_title_created">Status:</string>
+    <string name="species_title_created">Species:</string>
+    <string name="type_title_created">Type:</string>
+    <string name="gender_title_created">Gender:</string>
+
+<!-- Filter Characters Fragment-->
+    <string name="filter_characters">Filter Characters</string>
+</resources>
